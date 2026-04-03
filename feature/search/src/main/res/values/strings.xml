@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Search</string>
+    <string name="action_view_album">View Album</string>
+    <string name="screen_title_album">Album</string>
+    <string name="error_loading_album">Failed to load album</string>
+    <string name="label_unknown_genre">Unknown genre</string>
+    <string name="empty_album_tracks">No songs found for this album.</string>
+</resources>

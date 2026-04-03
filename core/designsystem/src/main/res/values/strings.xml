@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Design System</string>
+    <string name="common_more_options">More options</string>
+    <string name="common_back">Back</string>
+    <string name="search_placeholder">Search songs…</string>
+    <string name="search_content_description">Search</string>
+    <string name="screen_title_songs">Songs</string>
+    <string name="screen_title_now_playing">Now Playing</string>
+    <!-- Wear OS strings -->
+    <string name="wear_no_track">No track</string>
+    <string name="wear_waiting_for_phone">Waiting for phone</string>
+    <string name="wear_previous">Previous</string>
+    <string name="wear_next">Next</string>
+    <string name="wear_play">Play</string>
+    <string name="wear_pause">Pause</string>
+    <string name="wear_enable_loop">Enable loop</string>
+    <string name="wear_disable_loop">Disable loop</string>
+</resources>

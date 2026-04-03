@@ -1,0 +1,71 @@
+package dev.jmoicano.multiplayer.core.database.mapper
+
+import dev.jmoicano.multiplayer.core.database.model.TrackEntity
+import dev.jmoicano.multiplayer.core.network.model.Track
+
+/** Converts the network/domain model into a Room-persistable entity. */
+fun Track.toEntity(): TrackEntity = TrackEntity(
+    wrapperType = wrapperType,
+    kind = kind,
+    collectionId = collectionId,
+    trackId = trackId,
+    artistName = artistName,
+    collectionName = collectionName,
+    trackName = trackName,
+    collectionCensoredName = collectionCensoredName,
+    trackCensoredName = trackCensoredName,
+    artistViewUrl = artistViewUrl,
+    collectionViewUrl = collectionViewUrl,
+    trackViewUrl = trackViewUrl,
+    previewUrl = previewUrl,
+    artworkUrl30 = artworkUrl30,
+    artworkUrl60 = artworkUrl60,
+    artworkUrl100 = artworkUrl100,
+    collectionPrice = collectionPrice,
+    trackPrice = trackPrice,
+    releaseDate = releaseDate,
+    collectionExplicitness = collectionExplicitness,
+    trackExplicitness = trackExplicitness,
+    discNumber = discNumber,
+    trackNumber = trackNumber,
+    trackTimeMillis = trackTimeMillis,
+    country = country,
+    currency = currency,
+    primaryGenreName = primaryGenreName,
+    isStreamable = isStreamable,
+    hasLyrics = hasLyrics,
+)
+
+/** Rebuilds the track model from a persisted local entity. */
+fun TrackEntity.toTrack(): Track = Track(
+    wrapperType = wrapperType,
+    kind = kind,
+    collectionId = collectionId,
+    trackId = trackId,
+    artistName = artistName,
+    collectionName = collectionName,
+    trackName = trackName,
+    collectionCensoredName = collectionCensoredName,
+    trackCensoredName = trackCensoredName,
+    artistViewUrl = artistViewUrl,
+    collectionViewUrl = collectionViewUrl,
+    trackViewUrl = trackViewUrl,
+    previewUrl = previewUrl,
+    artworkUrl30 = artworkUrl30,
+    artworkUrl60 = artworkUrl60,
+    artworkUrl100 = artworkUrl100,
+    collectionPrice = collectionPrice,
+    trackPrice = trackPrice,
+    releaseDate = releaseDate,
+    collectionExplicitness = collectionExplicitness,
+    trackExplicitness = trackExplicitness,
+    discNumber = discNumber,
+    trackNumber = trackNumber,
+    trackTimeMillis = trackTimeMillis,
+    country = country,
+    currency = currency,
+    primaryGenreName = primaryGenreName,
+    isStreamable = isStreamable,
+    hasLyrics = hasLyrics,
+)
+

@@ -1,0 +1,176 @@
+[versions]
+
+# Core
+kotlin = "2.1.0"
+agp = "8.6.0"
+
+# Compose
+composeBom = "2024.12.01"
+composeCompiler = "1.5.15"
+
+# AndroidX
+coreKtx = "1.15.0"
+lifecycle = "2.8.7"
+activityCompose = "1.10.0"
+coreSplashscreen = "1.2.0"
+
+# Coroutines
+coroutines = "1.8.1"
+
+# Networking
+ktor = "2.3.7"
+
+# Paging
+paging = "3.3.0"
+paging-compose = "3.3.0-rc01"
+
+# Media / Player
+media3 = "1.4.1"
+
+# Wear
+wearCompose = "1.4.0"
+playServicesWearable = "19.0.0"
+
+# Testing
+junit = "4.13.2"
+junitExt = "1.2.1"
+espresso = "3.6.1"
+coroutinesTest = "1.8.1"
+
+# Optional DI
+hilt = "2.55"
+hiltNavigation = "1.2.0"
+
+# Serialization
+kotlinxSerialization = "1.7.3"
+
+# Image loading
+coil = "2.5.0"
+
+# Room
+room = "2.6.1"
+ksp = "2.1.0-1.0.29"
+
+appcompat = "1.7.0"
+media = "1.7.0"
+material = "1.12.0"
+
+[libraries]
+
+# -----------------------
+# ANDROID CORE
+# -----------------------
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
+
+# -----------------------
+# LIFECYCLE / VIEWMODEL
+# -----------------------
+androidx-lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
+
+# -----------------------
+# COMPOSE (BOM)
+# -----------------------
+compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBom" }
+
+# Compose UI
+compose-ui = { module = "androidx.compose.ui:ui" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+compose-ui-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+
+# Material
+compose-material3 = { module = "androidx.compose.material3:material3" }
+
+# Activity Compose
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
+
+# -----------------------
+# WEAR OS COMPOSE
+# -----------------------
+wear-compose-material = { module = "androidx.wear.compose:compose-material", version.ref = "wearCompose" }
+wear-compose-foundation = { module = "androidx.wear.compose:compose-foundation", version.ref = "wearCompose" }
+play-services-wearable = { module = "com.google.android.gms:play-services-wearable", version.ref = "playServicesWearable" }
+
+# -----------------------
+# COROUTINES
+# -----------------------
+coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+coroutines-play-services = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services", version.ref = "coroutines" }
+
+# -----------------------
+# KTOR
+# -----------------------
+ktor-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+ktor-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-serialization = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-mock-engine = { module = "io.ktor:ktor-client-mock", version.ref = "ktor" }
+
+# -----------------------
+# PAGING
+# -----------------------
+paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "paging" }
+paging-compose = { module = "androidx.paging:paging-compose", version.ref = "paging-compose" }
+
+# -----------------------
+# MEDIA3 (PLAYER)
+# -----------------------
+media3-exoplayer = { module = "androidx.media3:media3-exoplayer", version.ref = "media3" }
+media3-session = { module = "androidx.media3:media3-session", version.ref = "media3" }
+
+# -----------------------
+# SERIALIZATION
+# -----------------------
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
+
+# -----------------------
+# ROOM
+# -----------------------
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+
+# -----------------------
+# HILT
+# -----------------------
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
+hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigation" }
+
+# -----------------------
+# TESTING
+# -----------------------
+junit4 = { module = "junit:junit", version.ref = "junit" }
+androidx-junit = { module = "androidx.test.ext:junit", version.ref = "junitExt" }
+espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso" }
+coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutinesTest" }
+
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-media = { group = "androidx.media", name = "media", version.ref = "media" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+# Image loading
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
+
+
+[plugins]
+
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }

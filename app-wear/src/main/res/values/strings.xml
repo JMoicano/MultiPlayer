@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Multi Player</string>
+    <string name="hello_world">Hello, %1$s!</string>
+    <string name="wear_menu_title">Music</string>
+    <string name="wear_menu_albums">Albums</string>
+    <string name="wear_unknown_album">Unknown album</string>
+</resources>

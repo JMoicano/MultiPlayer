@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Player</string>
+    <string name="player_title_now_playing">Now playing</string>
+    <string name="player_options">Player options</string>
+    <string name="player_error">Failed to load player</string>
+    <string name="player_view_album">View album</string>
+    <string name="player_toggle_loop">Toggle loop</string>
+    <string name="player_enable_loop">Enable loop</string>
+    <string name="player_disable_loop">Disable loop</string>
+    <string name="player_previous">Previous</string>
+    <string name="player_next">Next</string>
+    <string name="player_play">Play</string>
+    <string name="player_pause">Pause</string>
+</resources>
